@@ -1,4 +1,4 @@
-package Fibonacci;
+package JavaCode;
 
 public class FibonacciWithFor {
 
