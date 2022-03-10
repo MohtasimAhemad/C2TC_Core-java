@@ -26,7 +26,7 @@ class Car
    }
 
 }
-public class D {
+public class Day1InClass {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
