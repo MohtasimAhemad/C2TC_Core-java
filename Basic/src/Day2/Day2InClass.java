@@ -16,7 +16,7 @@ class B extends A//now here we use the concept of inheritance // using "extend" 
 	}
 }
 
-public class C {
+public class Day2InClass {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
