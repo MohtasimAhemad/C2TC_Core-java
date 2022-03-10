@@ -28,7 +28,7 @@ class D
 			System.out.println("Hello everyone!");
 		}
 }
-public class C
+public class Day3InClass
 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
