@@ -13,7 +13,7 @@ class X
 		m1(); //call method m1
 	}
 }
-public class Xyz {
+public class ActivityOnVar {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
