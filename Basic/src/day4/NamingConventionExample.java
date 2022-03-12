@@ -4,7 +4,7 @@ class Person       //Class first Letter Uppercase
 {
 	String name="John";  //variable lowercase
 	int age=25;          //variable lowercase
-	
+	static int days_in_week=7;   //constant variable
 	
 	void eat()           					//method lowercase
 	{
@@ -27,6 +27,8 @@ public class NamingConventionExample   //Class First letter of  first word Upper
 				
 		p.eat();                  
 		p.playPerson();
+		
+		System.out.println(Person.days_in_week); // constant  access by class
 	}
 
 }
