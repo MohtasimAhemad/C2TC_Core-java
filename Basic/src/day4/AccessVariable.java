@@ -22,7 +22,7 @@ public class AccessVariable {
 	    metro1 = new City();
 	    metro2 = new City();
 	    
-	    metro1.name ="Mumbai";         //access variable 
+	    metro1.name ="Mumbai";         //access variable  by instance of object
 	    metro1.population = 1000000;
 	    System.out.println("Details of metro city 1:");
 	    metro1.display(); //access method display() method is being invoked for the object metro1
