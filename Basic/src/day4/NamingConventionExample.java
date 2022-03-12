@@ -2,22 +2,22 @@ package day4;  // package name with lower case
 
 class Person       //Class first Letter Uppercase
 {
-	String name="John";  //variable lowercase
-	int age=25;          //variable lowercase
-	static int days_in_week=7;   //constant variable
+	String name="John";  // variable lowercase
+	int age=25;          // variable lowercase
+	static int days_in_week=7;   // constant variable
 	
-	void eat()           					//method lowercase
+	void eat()           					// method lowercase
 	{
 		System.out.println("Eat");
 	}
 	
-	void playPerson()						//method lowercase
+	void playPerson()						// method lowercase
 	{
 		System.out.println("Method Body");
 	}
 }
 
-public class NamingConventionExample   //Class First letter of  first word Uppercase then First latter of second word.
+public class NamingConventionExample   // Class First letter of  first word Uppercase then First latter of second word.
 {  
 
 	public static void main(String[] args) {
