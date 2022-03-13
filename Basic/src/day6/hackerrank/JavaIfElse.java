@@ -10,13 +10,19 @@ public class JavaIfElse {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		String ans = "";
-		if (n % 2 == 1) {
+		if (n % 2 == 1) 
+		{
 			ans = "Weird";
-		} else {
+		} 
+		else 
+		{
 
-			if (n >= 6 && n <= 20) {
+			if (n >= 6 && n <= 20) 
+			{
 				ans = "Weird";
-			} else {
+			} 
+			else 
+			{
 				ans = "Not Weird";
 			}
 
