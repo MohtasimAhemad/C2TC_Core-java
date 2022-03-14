@@ -1,4 +1,4 @@
-package day8;
+package day8.hackerrank;
 /*  hackerrank solution  - java inheritance 1 */
 import java.io.*;
 import java.util.*;
