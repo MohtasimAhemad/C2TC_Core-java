@@ -22,7 +22,7 @@ public class SuperKeyword3 {
 
 	public static void main(String[] args) {
 
-		Dog d=new Dog();  
+		Dog d=new Dog();   
 	}
 
 }
