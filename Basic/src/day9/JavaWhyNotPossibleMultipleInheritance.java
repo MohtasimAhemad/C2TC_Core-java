@@ -24,9 +24,10 @@ package day9;
 			System.out.println("Welcome");
 		}  
 	}  
-class C extends A,B	  // show the compile time error
+class C extends A//,B	  // show the compile time error
 {	
    
+}
 public class JavaWhyNotPossibleMultipleInheritance {
 
 	public static void main(String[] args) {
