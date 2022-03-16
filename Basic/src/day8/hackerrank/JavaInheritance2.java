@@ -17,7 +17,7 @@ class Arithmetic   //logic of this hackerrank problem
 class Adder extends Arithmetic
 {
     
-}   // 
+}   
 
 public class JavaInheritance2 {
 
