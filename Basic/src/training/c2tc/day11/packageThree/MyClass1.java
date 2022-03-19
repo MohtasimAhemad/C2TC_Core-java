@@ -1,4 +1,4 @@
-package training.c2tc.day11.package3;  //user define package
+package training.c2tc.day11.packageThree;  //user define package
 
 import java.util.ArrayList;           // BuiltIn package
 
