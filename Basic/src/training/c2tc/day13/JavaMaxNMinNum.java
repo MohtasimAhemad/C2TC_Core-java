@@ -5,7 +5,7 @@ public class JavaMaxNMinNum {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] nums = { 5, 7, 2, 4, 9, 6 };
+		int[] nums = { 65, 72, 12, 04, 659, 26 };
 		 
         // find the minimum and maximum element.
         findMaxAndMin(nums);

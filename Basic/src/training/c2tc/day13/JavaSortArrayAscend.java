@@ -8,7 +8,7 @@ public class JavaSortArrayAscend {
 		// TODO Auto-generated method stub
 		
 		//Initialize array     
-        int [] arr = new int [] {5, 2, 8, 7, 1};     
+        int [] arr = new int [] {24, 4, 90, 20, 1};     
         int temp = 0;    
             
         //Displaying elements of original array    

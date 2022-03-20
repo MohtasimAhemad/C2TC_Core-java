@@ -44,7 +44,7 @@ public class JavaPeakElement {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int[] nums = { 8, 9, 10, 2, 5, 6 };
+		int[] nums = { 7, 1, 10, 22, 50, 26 };
         System.out.println("The peak element is " + findPeakElement(nums));
 	}
 
