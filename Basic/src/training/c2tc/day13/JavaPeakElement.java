@@ -39,6 +39,7 @@ class Main
 		        int index = findPeakElement(nums, 0, nums.length - 1);
 		        return nums[index];
 		    }
+		 
 public class JavaPeakElement {
 
 	public static void main(String[] args) {
