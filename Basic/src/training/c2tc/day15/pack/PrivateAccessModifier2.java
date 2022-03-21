@@ -1,6 +1,6 @@
 package training.c2tc.day15.pack;
 
-import training.c2tc.day15.PrivateAccessModifier;
+import training.c2tc.day15.PrivateAccessModifier; // import package
 
 
 public class PrivateAccessModifier2 extends PrivateAccessModifier {
