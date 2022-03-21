@@ -1,4 +1,5 @@
 package training.c2tc.day15;
+/* access private member using Getters and Setters Methods. */
 
 class Test
 {
