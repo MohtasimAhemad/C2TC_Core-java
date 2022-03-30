@@ -35,7 +35,6 @@ class ICU extends General
 public class JavaInheritance1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		ICU i = new ICU();
 		
