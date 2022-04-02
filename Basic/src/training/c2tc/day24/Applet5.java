@@ -20,11 +20,37 @@ public class Applet5 extends Applet
 		p2.c1.setState(true);
 		p2.c2.setState(true);
 		p2.c3.setState(false);
-		p2.t.setText("boom");
+		p2.t.setText("3000");
 		p2.t.setEditable(false);
 		
 	}
-	 
+	public boolean action(Event e,Object o)
+	{
+		if(p1.c1.getState())
+			{
+				p2.c1.setState(true);
+				p2.c2.setState(true);
+				p2.c3.setState(false);
+				p2.t.setText("3000");
+			}
+		if(p1.c2.getState())
+		{
+			p2.c1.setState(false);
+			p2.c2.setState(true);
+			p2.c3.setState(true);
+			p2.t.setText("6000");
+		}
+		if(p1.c3.getState())
+		{
+			p2.c1.setState(true);
+			p2.c2.setState(false);
+			p2.c3.setState(true);
+			p2.t.setText("9000");
+		}
+		
+		
+	 return true;
+	}
 
 }
 	
