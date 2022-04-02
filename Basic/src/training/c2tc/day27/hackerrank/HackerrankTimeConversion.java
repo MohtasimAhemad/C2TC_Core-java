@@ -1,4 +1,4 @@
-package training.c2tc.day27;
+package training.c2tc.day27.hackerrank;
 
 import java.io.*;
 import java.math.*;

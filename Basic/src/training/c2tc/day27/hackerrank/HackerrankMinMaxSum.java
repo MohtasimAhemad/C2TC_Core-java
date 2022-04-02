@@ -1,4 +1,4 @@
-package training.c2tc.day27;
+package training.c2tc.day27.hackerrank;
 /*
  * MIN - MAX SUM
  * find the minimum and maximum values that can be calculated by summing exactly four of the five integers
