@@ -59,7 +59,7 @@ public class HackerrankDiagonalDifference {
         List<List<Integer>> arr = new ArrayList<>();
 
         for (int i = 0; i < n; i++) {
-            String[] arrRowTempItems;
+            String[] arrRowTempItems = null;
 			try {
 				arrRowTempItems = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
 			} catch (IOException e) {

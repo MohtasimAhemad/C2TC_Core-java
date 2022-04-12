@@ -21,7 +21,8 @@ public class HackerrankCountingSort1 {
         return count;
     }
     
-    private static String outputString( int[] ar ) {
+    private static String outputString( int[] ar ) 
+    {
         StringJoiner joiner = new StringJoiner( " " );
         for( Integer value : ar ) {
             joiner.add( value.toString() );
@@ -29,7 +30,8 @@ public class HackerrankCountingSort1 {
         return joiner.toString();
     }
     
-    private static int[] convertToInts( String[] values ) {
+    private static int[] convertToInts( String[] values ) 
+    {
         int[] parsed = new int[values.length];
         for( int i = 0; i < values.length; i++ ) {
             parsed[i] = Integer.valueOf( values[i] );

@@ -16,7 +16,7 @@ public class AppletPart1 extends Applet implements ActionListener
 		add(t=new TextField(15));
 		add(b2=new Button("Clear"));
 		b1.addActionListener(this);
-		b2.addActionListener(this);;
+		b2.addActionListener(this);
 	}
 
 	@Override
