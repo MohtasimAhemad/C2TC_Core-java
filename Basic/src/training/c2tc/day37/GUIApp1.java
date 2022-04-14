@@ -1,6 +1,7 @@
 package training.c2tc.day37;
 
 import java.awt.Button;
+import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.TextField;
 import java.awt.event.WindowAdapter;
@@ -13,6 +14,7 @@ public class GUIApp1 extends Frame
 
 	GUIApp1()
 	{
+		setLayout(new FlowLayout()); 
 		add(b1 = new Button("Click Me!!"));
 		add(t = new TextField(15));
 		add(b2 = new Button("Clear me"));
@@ -20,18 +22,20 @@ public class GUIApp1 extends Frame
 		b2.addActionListener((e)->t.setText(""));
 		addWindowListener(new WindowAdapter()
 		{
-			
+			@Override
 			public void windowClosing(WindowEvent we )
 			{
 				System.exit(0);
 			}
 		});
+		setSize(400,500);
+		setVisible(true);
 	}
 	
 	public static void main(String[] args)
 	{
 
-		GUIApp1 g = new GUIApp1();
+		new GUIApp1();
 		
 	}
 
