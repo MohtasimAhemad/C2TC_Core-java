@@ -21,7 +21,6 @@ usually counter variable increment or decrement
 public class DifferenceBTWLoops {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		/* ** For Loop ** */
 		int n = 5;
 	      for (int i = 0; i < n; i++)
