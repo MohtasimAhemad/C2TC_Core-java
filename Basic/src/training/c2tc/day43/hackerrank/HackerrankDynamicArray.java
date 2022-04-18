@@ -63,16 +63,17 @@ public class HackerrankDynamicArray {
 
         List<List<Integer>> queries = new ArrayList<>();
 
+        /*
         IntStream.range(0, q).forEach(i -> {
-            try {
+            *  try {
                 queries.add(
                     Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-                        .map(Integer::parseInt)
-                        .collect(toList()));
+                        .map(Integer::parseInt).collect(toList()));
             } catch (IOException ex) {
                 throw new RuntimeException(ex);
             }
-        });
+        });*/
+        
 
         List<Integer> result = Result.dynamicArray(n, queries);
 
