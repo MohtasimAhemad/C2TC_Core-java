@@ -1,4 +1,4 @@
-package training.c2tc.day43;
+package training.c2tc.day43.hackerrank;
 
 import java.io.BufferedReader;
 import java.io.IOException;
