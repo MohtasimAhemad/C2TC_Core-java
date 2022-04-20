@@ -1,4 +1,4 @@
-package training.c2tc.day45;
+package training.c2tc.day46;
 
 import java.awt.Button;
 import java.awt.FlowLayout;
