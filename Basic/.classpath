@@ -8,5 +8,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="/Exceptions"/>
 	<classpathentry kind="lib" path="C:/H/Hibernate/mysql-connector-java-8.0.13.jar"/>
+	<classpathentry kind="lib" path="C:/H/Hibernate/javax.persistence-api-2.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
