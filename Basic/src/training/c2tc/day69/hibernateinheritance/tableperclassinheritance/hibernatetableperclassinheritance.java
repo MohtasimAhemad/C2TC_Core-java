@@ -10,7 +10,7 @@ public class hibernatetableperclassinheritance
 	{
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("JPA-PU");
 		EntityManager em = factory.createEntityManager();
-		em.getTransaction();
+		em.getTransaction().begin();
 		
 		Employee e = new Employee();
 		e.setEmpName("Rutik");

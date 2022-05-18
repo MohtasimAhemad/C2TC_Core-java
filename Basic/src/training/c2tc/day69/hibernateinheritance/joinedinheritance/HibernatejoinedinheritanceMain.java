@@ -1,8 +1,11 @@
 package training.c2tc.day69.hibernateinheritance.joinedinheritance;
 
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+
+
 
 public class HibernatejoinedinheritanceMain 
 {
@@ -10,7 +13,7 @@ public class HibernatejoinedinheritanceMain
 	{
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("JPA-PU");
 		EntityManager em = factory.createEntityManager();
-		em.getTransaction();
+		em.getTransaction().begin();
 		
 		Employee e = new Employee();
 		e.setEmpName("subash");

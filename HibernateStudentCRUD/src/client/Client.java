@@ -12,16 +12,27 @@ public class Client {
 				Student student = new Student();
 				
 		// Create Operation 
-				student.setStudentId(1);
-				student.setName("mohtasim");
-				service.addStudent(student);
+				Student student1 = new Student();
+				student1.setStudentId(1);
+				student1.setName("shoaib");
+				service.addStudent(student1);
 				
+				Student student11 = new Student();
+				student11.setStudentId(2);
+				student11.setName("ankit");
+				service.addStudent(student11);
+						
+				Student student111 = new Student();
+				student111.setStudentId(3);
+				student111.setName("shahrukh");
+				service.addStudent(student111);
 				
 		// Retrieve Operation 
-				student = service.findStudentById(1);
+				student = service.findStudentById(11);
+				/*
 				System.out.print("ID:" + student.getStudentId());
 				System.out.println(" Name:" + student.getName());
-				
+			*/	
 		/*	
 		//Update Operation 
 				student = service.findStudentById(1);
