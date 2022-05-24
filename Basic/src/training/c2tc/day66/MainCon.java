@@ -10,7 +10,7 @@ public class MainCon {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 		    DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver() );
 
-				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sampledb","root","");
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hiber","root","");
 				System.out.println("connection establish");
 				 /*insert from user
 				System.out.println("enter user id ");
@@ -21,8 +21,9 @@ public class MainCon {
 				double usal=sc.nextDouble();
 				String sql="insert into user(uid,uname,usal)values("+uid+",'"+uname+"',"+usal+")";
 				
-//				insert operation
-				  */
+//				
+//				  insert operation
+				
 				String sql="insert into user values(11,'mohtasom',90),(12,'maaz',90)";
 				Statement stmt = con.createStatement();
 				int i=stmt.executeUpdate(sql);
@@ -30,6 +31,7 @@ public class MainCon {
 					System.out.println("record inserted"+i);
 				else
 					System.out.println("not insert");
+				  */
 				
 				/*delete operation
 				String sql="delete from user where uid=12";
@@ -64,7 +66,6 @@ public class MainCon {
 				
 				
 										// 	PreparedStatement //
-				/*inserted operation 
 				String sql="insert into user values(?,?,?)";
 				PreparedStatement pst=con.prepareStatement(sql);
 				pst.setInt(1, 101);
@@ -75,6 +76,7 @@ public class MainCon {
 					System.out.println("record Inserted");
 				else
 					System.out.println("not Inserted");
+				/*inserted operation 
 				 */
 				
 				/*delete operation

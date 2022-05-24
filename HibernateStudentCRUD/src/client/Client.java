@@ -49,6 +49,7 @@ public class Client {
 				service.removeStudent(student);
 				System.out.println("End of program/Life cycle completed...");	
 		*/	
+		
 	}
 
 }

@@ -15,9 +15,9 @@ public class EmployeePpStmtDelete {
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
-			con =DriverManager.getConnection("jdbc:mysql://localhost:3306/sampledb","root","");
+			con =DriverManager.getConnection("jdbc:mysql://localhost:3306/hiber","root","");
 			
-			pt= con.prepareStatement(" delete from emp where empId = 1");
+			pt= con.prepareStatement(" delete from user where id =1");
 	
 			int i = pt.executeUpdate();
 			

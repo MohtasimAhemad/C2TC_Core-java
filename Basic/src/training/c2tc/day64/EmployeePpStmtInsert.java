@@ -17,9 +17,9 @@ public class EmployeePpStmtInsert {
 			
 			con =DriverManager.getConnection("jdbc:mysql://localhost:3306/sampledb","root","");
 			
-			pt= con.prepareStatement("insert into emp values(?,?,?,?)");
+			pt= con.prepareStatement("insert into user values(?,?,?,?)");
 			pt.setInt(1, 101);
-			pt.setString(2, "mohtasim");
+			pt.setString(2, "Neha");
 			pt.setDouble(3, 12000.00);
 			pt.setInt(4,938754673);
 			

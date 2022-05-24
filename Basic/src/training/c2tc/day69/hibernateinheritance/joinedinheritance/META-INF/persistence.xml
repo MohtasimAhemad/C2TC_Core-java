@@ -6,7 +6,7 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" version="2.0">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/sampledb" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/hiber" />
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password" value="" />
 			

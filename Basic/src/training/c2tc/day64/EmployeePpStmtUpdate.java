@@ -17,7 +17,7 @@ public class EmployeePpStmtUpdate {
 			
 			con =DriverManager.getConnection("jdbc:mysql://localhost:3306/sampledb","root","");
 			
-			pt= con.prepareStatement(" update emp set empName = 'mohtasim' where empId = 1");
+			pt= con.prepareStatement(" update user set name = 'Nikita' where id = 101");
 	
 			int i = pt.executeUpdate();
 			
