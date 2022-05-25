@@ -32,18 +32,14 @@ public class ShopOwner implements Serializable
 	@OneToOne(mappedBy ="shopowner")
 	private MallAdmin mallAdmin;
 	
-	/*@Column(name ="Shop_Id")
-	private Shop shop;*/
-	
 	public ShopOwner() {}
 	
-	public ShopOwner(int id, String name, LocalDate dob, String address, Shop shop, MallAdmin mallAdmin) 
+	public ShopOwner(int id, String name, LocalDate dob, String address, MallAdmin mallAdmin) 
 	{
 		this.id = id;
 		this.name = name;
 		this.dob = dob;
 		this.address = address;
-		//this.shop = shop;
 		this.mallAdmin = mallAdmin;
 	}
 
@@ -86,16 +82,6 @@ public class ShopOwner implements Serializable
 		this.address = address;
 	}
 	
-	/*public Shop getShop() 
-	{
-		return shop;
-	}
-	
-	public void setShop(Shop shop) 
-	{
-		this.shop = shop;
-	}*/
-
 	public MallAdmin getMallAdmin()
 	{
 		return mallAdmin;

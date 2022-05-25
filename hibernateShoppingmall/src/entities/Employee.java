@@ -41,7 +41,7 @@ public class Employee implements Serializable
 	private String designation;
 	
 	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name ="ShopEmp_Id")
+	@JoinColumn(name ="Shop_Id")
 	private Shop shop;
 	
 	public Employee() {}

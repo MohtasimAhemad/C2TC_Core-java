@@ -35,23 +35,18 @@ public class OrderDetails implements Serializable
 	@Column(name ="Payment_Mode")
 	private String paymentMode;
 	
-	/*@Column(name ="Shop_ID")
-	private Shop shop; */
-	
 	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name ="Cust_id")
+	@JoinColumn(name ="Cust_Id")
 	private Customer customer;
 	
 	public OrderDetails() {}
 
-	public OrderDetails(int id, LocalDateTime dateOfPurchase, float total, String paymentMode, /*Shop shop,*/
-			Customer customer)
+	public OrderDetails(int id, LocalDateTime dateOfPurchase, float total, String paymentMode, Customer customer)
 	{
 		this.id = id;
 		this.dateOfPurchase = dateOfPurchase;
 		this.total = total;
 		this.paymentMode = paymentMode;
-		//this.shop = shop;
 		this.customer = customer;
 	}
 
@@ -94,15 +89,6 @@ public class OrderDetails implements Serializable
 	{
 		this.paymentMode = paymentMode;
 	}
-
-	/*public Shop getShop() 
-	{
-		return shop;
-	}
-	public void setShop(Shop shop) 
-	{
-		this.shop = shop;
-	}*/
 
 	public Customer getCustomer() 
 	{

@@ -58,18 +58,17 @@ public class Client {
 		/********* Customer *********/
 		
 		
-		
 		// Add records in Customer Table.
 		// record 1
 		Customer cust = new Customer(); // Customer Object 1
-		cust.setId(101);
+		cust.setId(101111);
 		cust.setName("Kartik");
 		cust.setPhone("7066066070");
 		cust.setEmail("Kartik@gmail.com");
 
 		// record 2
 		Customer cust1 = new Customer(); // Customer Object 2
-		cust1.setId(102);
+		cust1.setId(102222);
 		cust1.setName("Suhana");
 		cust1.setPhone("7072737475");
 		cust1.setEmail("Suhana@gmail.com");
@@ -82,7 +81,6 @@ public class Client {
 		
 		
 		/********* Employee *********/
-		
 		
 		
 		
@@ -105,9 +103,27 @@ public class Client {
 		emp1.setSalary(20000);
 		emp1.setAddress("Nashik");
 		emp1.setDesignation("Associate");
+		
+		Employee emp2 = new Employee(); // Employee Object 1
+		LocalDate date22 = LocalDate.of(1980, 8, 12);
+		
+		emp1.setName("Hardik");
+		emp1.setDob(date22);
+		emp1.setSalary(12000);
+		emp1.setAddress("pune");
+		emp1.setDesignation("helper");
 
 		System.out.println("Records Inserted in Employee Table");
 
+	/*	emp = eservice.searchEmployeeById(1);
+		emp.setName("Abhishek"); 
+		emp.setSalary(19000);
+		emp.setAddress("Mumbai");
+		emp.setDesignation("asist");
+		eservice.updateEmployee(emp);
+		
+		System.out.println("Updated");
+		*/
 		
 		
 		
@@ -138,10 +154,26 @@ public class Client {
 		item1.setExpiry(date5);
 		item1.setPrice(50000);
 		item1.setCategory("Televisions");
+		
+		Item item2 = new Item();
+		LocalDate date44 = LocalDate.of(2021, 1, 20);
+		LocalDate date55 = LocalDate.of(2029, 3, 21);
+		
+		item1.setName("Oneplus");
+		item1.setManufacturing(date4);
+		item1.setExpiry(date5);
+		item1.setPrice(50000);
+		item1.setCategory("Mobiles");
 
 		System.out.println("Records Inserted in Item Table");
+		
 
+		
+		
 		/********* MallAdmin *********/
+		
+		
+		
 		// Add records of MallAdmin Table.
 		// record 1
 		MallAdmin mallad = new MallAdmin();
@@ -157,8 +189,14 @@ public class Client {
 
 		System.out.println("Records Inserted in MallAdmin Table");
 
+		
+		
+		
+		
 		/********* Mall *********/
 
+		
+		
 		// Add records of Mall Table.
 		// record 1
 		Mall mall = new Mall();
@@ -178,12 +216,20 @@ public class Client {
 
 		System.out.println("Records Inserted in Mall Table");
 
+		
+		
+		
+		
 		/********* OrderDetails *********/
+		
+		
+		
 		// Add records of OrderDetails Table.
 		// record 1
 		OrderDetails od = new OrderDetails();
 		LocalDateTime datetime = LocalDateTime.of(2022, 4, 28, 11, 31);
 
+		od.setId(34);
 		od.setDateOfPurchase(datetime);
 		od.setTotal(156000);
 		od.setPaymentMode("Online");
@@ -192,13 +238,30 @@ public class Client {
 		OrderDetails od1 = new OrderDetails();
 		LocalDateTime datetime1 = LocalDateTime.of(2022, 2, 16, 2, 13);
 
+		od1.setId(35);
 		od1.setDateOfPurchase(datetime1);
 		od1.setTotal(50000);
 		od1.setPaymentMode("Online");
+		
+		// record 3
+		OrderDetails od2 = new OrderDetails();
+		LocalDateTime datetime2 = LocalDateTime.of(2022,4,26,4,30);
+			
+		od2.setId(36);
+		od2.setDateOfPurchase(datetime2);
+		od2.setTotal(5000);
+		od2.setPaymentMode("Online");
 
 		System.out.println("Records Inserted in OrderDetails Table");
 
+		
+		
+		
+		
 		/********* Shop *********/
+		
+		
+		
 		// Add records for shop Table.
 		// record 1
 		Shop shp = new Shop();
@@ -222,7 +285,14 @@ public class Client {
 
 		System.out.println("Records Inserted in Shop Table");
 
+		
+		
+		
+		
 		/********* ShopOwner *********/
+		
+		
+		
 		// Add records for ShopOwner Table.
 		ShopOwner shown = new ShopOwner();
 		LocalDate date6 = LocalDate.of(1996, 12, 9);
@@ -244,7 +314,13 @@ public class Client {
 
 		System.out.println("Records Inserted in ShopOwner Table");
 
+		
+		
+		
 		/********* User *********/
+		
+		
+		
 		// Add records for User Table.
 		// record 1
 		User user = new User();
@@ -252,7 +328,7 @@ public class Client {
 		user.setId(112233);
 		user.setName("Kartik001");
 		user.setType("Hands off");
-		user.setPassword("Anu1234");
+		user.setPassword("Kartik@234");
 
 		// record 2
 		User user1 = new User();
@@ -263,9 +339,14 @@ public class Client {
 		user1.setPassword("Rushi@007");
 
 		System.out.println("Records Inserted in User Table");
+		
+		
+		
+		 
 
 		/********* One To One Mapping *********/
 
+		
 		// Customer & USer
 		cust.setUser(user);
 		cust1.setUser(user1);
@@ -299,26 +380,35 @@ public class Client {
 		// Customer & OrderDetails
 
 		od.setCustomer(cust);
-		od1.setCustomer(cust1);
-
 		em.persist(od);
+		
+		od1.setCustomer(cust1);
 		em.persist(od1);
+		
+		od2.setCustomer(cust1);
+		em.persist(od2);
 
 		// Shop & Employee
 
 		emp.setShop(shp);
-		emp1.setShop(shp1);
-
 		em.persist(emp);
+		
+		emp1.setShop(shp1);
 		em.persist(emp1);
+//		
+//		emp2.setShop(shp1);
+//		em.persist(emp2);
 
 		// Shop & Item
 
 		item.setShop(shp);
-		item1.setShop(shp1);
-
 		em.persist(item);
-		em.persist(item1);
+		
+		item.setShop(shp1);
+		em.persist(item);
+		
+//		item2.setShop(shp1);
+//		em.persist(item2);
 
 		em.getTransaction().commit();
 
