@@ -88,6 +88,7 @@ public class Client {
 		// record 1
 		Employee emp = new Employee(); // Employee Object 1
 		LocalDate date = LocalDate.of(1998, 07, 8);
+		emp.setId(0001);
 		emp.setName("Mohtasim");
 		emp.setDob(date);
 		emp.setSalary(40000);
@@ -98,32 +99,28 @@ public class Client {
 		Employee emp1 = new Employee(); // Employee Object 1
 		LocalDate date1 = LocalDate.of(1998, 8, 12);
 
+		emp.setId(0002);
 		emp1.setName("Uzair");
 		emp1.setDob(date1);
 		emp1.setSalary(20000);
 		emp1.setAddress("Nashik");
 		emp1.setDesignation("Associate");
 		
-		Employee emp2 = new Employee(); // Employee Object 1
-		LocalDate date22 = LocalDate.of(1980, 8, 12);
 		
-		emp1.setName("Hardik");
-		emp1.setDob(date22);
-		emp1.setSalary(12000);
-		emp1.setAddress("pune");
-		emp1.setDesignation("helper");
 
 		System.out.println("Records Inserted in Employee Table");
 
-	/*	emp = eservice.searchEmployeeById(1);
-		emp.setName("Abhishek"); 
-		emp.setSalary(19000);
-		emp.setAddress("Mumbai");
-		emp.setDesignation("asist");
-		eservice.updateEmployee(emp);
-		
-		System.out.println("Updated");
-		*/
+	
+////	 update operation
+//	 emp = eservice.searchEmployeeById(1);
+//		emp.setName("Abhishek"); 
+//		emp.setSalary(19000);
+//		emp.setAddress("Mumbai");
+//		emp.setDesignation("asist");
+//		eservice.updateEmployee(emp);
+//		
+//		System.out.println("Updated");
+	
 		
 		
 		
@@ -138,6 +135,7 @@ public class Client {
 		LocalDate date2 = LocalDate.of(2021, 3, 15);
 		LocalDate date3 = LocalDate.of(2027, 1, 13);
 
+		item.setId(1212);
 		item.setName("Canon cam");
 		item.setManufacturing(date2);
 		item.setExpiry(date3);
@@ -145,25 +143,29 @@ public class Client {
 		item.setCategory("Cameras");
 
 		// record 2
+		
 		Item item1 = new Item();
 		LocalDate date4 = LocalDate.of(2022, 1, 20);
 		LocalDate date5 = LocalDate.of(2030, 3, 21);
 
+		item1.setId(1313);
 		item1.setName("Samsung Tv");
 		item1.setManufacturing(date4);
 		item1.setExpiry(date5);
 		item1.setPrice(50000);
 		item1.setCategory("Televisions");
 		
-		Item item2 = new Item();
-		LocalDate date44 = LocalDate.of(2021, 1, 20);
-		LocalDate date55 = LocalDate.of(2029, 3, 21);
 		
-		item1.setName("Oneplus");
-		item1.setManufacturing(date4);
-		item1.setExpiry(date5);
-		item1.setPrice(50000);
-		item1.setCategory("Mobiles");
+//		// record 3
+//		Item item2 = new Item();
+//		LocalDate date44 = LocalDate.of(2021, 1, 20);
+//		LocalDate date55 = LocalDate.of(2029, 3, 21);
+//		
+//		item1.setName("Oneplus");
+//		item1.setManufacturing(date4);
+//		item1.setExpiry(date5);
+//		item1.setPrice(50000);
+//		item1.setCategory("Mobiles");
 
 		System.out.println("Records Inserted in Item Table");
 		
@@ -395,20 +397,18 @@ public class Client {
 		
 		emp1.setShop(shp1);
 		em.persist(emp1);
-//		
-//		emp2.setShop(shp1);
-//		em.persist(emp2);
+		
+
 
 		// Shop & Item
 
 		item.setShop(shp);
 		em.persist(item);
 		
-		item.setShop(shp1);
-		em.persist(item);
+		item1.setShop(shp1);
+		em.persist(item1);
 		
-//		item2.setShop(shp1);
-//		em.persist(item2);
+
 
 		em.getTransaction().commit();
 
