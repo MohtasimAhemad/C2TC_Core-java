@@ -128,10 +128,10 @@ public class Item implements Serializable
 		this.shop = shop;
 	}
 
-	@Override
-	public String toString() 
-	{
-		return "Item [id=" + id + ", name=" + name + ", manufacturing=" + manufacturing + ", expiry=" + expiry
-				+ ", price=" + price + ", category=" + category + ", shop=" + shop + "]";
-	}
+//	@Override
+//	public String toString() 
+//	{
+//		return "Item [id=" + id + ", name=" + name + ", manufacturing=" + manufacturing + ", expiry=" + expiry
+//				+ ", price=" + price + ", category=" + category + ", shop=" + shop + "]";
+//	}
 }

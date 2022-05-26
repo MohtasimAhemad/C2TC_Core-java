@@ -127,10 +127,10 @@ public class MallAdmin implements Serializable
 		this.shopowner = shopowner;
 	}
 
-	@Override
-	public String toString() 
-	{
-		return "MallAdmin [id=" + id + ", name=" + name + ", password=" + password + ", phone=" + phone + ", mall="
-				+ mall + ", user=" + user + ", shopowner=" + shopowner + "]";
-	}
+//	@Override
+//	public String toString() 
+//	{
+//		return "MallAdmin [id=" + id + ", name=" + name + ", password=" + password + ", phone=" + phone + ", mall="
+//				+ mall + ", user=" + user + ", shopowner=" + shopowner + "]";
+//	}
 }

@@ -127,10 +127,10 @@ public class Employee implements Serializable
 		this.shop = shop;
 	}
 
-	@Override
-	public String toString() 
-	{
-		return "Employee [id=" + id + ", name=" + name + ", dob=" + dob + ", salary=" + salary + ", address=" + address
-				+ ", designation=" + designation + ", shop=" + shop + "]";
-	}
+//	@Override
+//	public String toString() 
+//	{
+//		return "Employee [id=" + id + ", name=" + name + ", dob=" + dob + ", salary=" + salary + ", address=" + address
+//				+ ", designation=" + designation + ", shop=" + shop + "]";
+//	}
 }

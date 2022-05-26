@@ -108,10 +108,10 @@ public class User implements Serializable
 		this.malladmin = malladmin;
 	}
 
-	@Override
-	public String toString() 
-	{
-		return "User [id=" + id + ", name=" + name + ", type=" + type + ", password=" + password + ", customer="
-				+ customer + ", malladmin=" + malladmin + "]";
-	}
+//	@Override
+//	public String toString() 
+//	{
+//		return "User [id=" + id + ", name=" + name + ", type=" + type + ", password=" + password + ", customer="
+//				+ customer + ", malladmin=" + malladmin + "]";
+//	}
 }

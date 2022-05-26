@@ -51,14 +51,15 @@ public class Client {
 		ShopService sservice = new ShopServiceImpl();
 		UserService uservice = new UserServiceImpl();
 
+
 		
 		
 		
-		
-		/********* Customer *********/
+						/********* Customer *********/
 		
 		
 		// Add records in Customer Table.
+		
 		// record 1
 		Customer cust = new Customer(); // Customer Object 1
 		cust.setId(101111);
@@ -67,6 +68,7 @@ public class Client {
 		cust.setEmail("Kartik@gmail.com");
 
 		// record 2
+	
 		Customer cust1 = new Customer(); // Customer Object 2
 		cust1.setId(102222);
 		cust1.setName("Suhana");
@@ -75,20 +77,29 @@ public class Client {
 
 		System.out.println("Records Inserted  in Customer Table");
 
+		/************* Retrieve operation perform row one in Customer table************/
+		/*
+		cust =cservice.searchCustomerById(101111);
+		System.out.println("Id: "+cust.getId());
+		System.out.println("Name: "+cust.getName());
+		System.out.println("Phone: "+cust.getPhone());
+		System.out.println("Email: "+cust.getEmail());
+		System.out.println(cust);
+		*/
 		
 		
 		
 		
 		
-		/********* Employee *********/
-		
+					/********* Employee *********/
 		
 		
 		// Add records in employee Table.
+		
 		// record 1
 		Employee emp = new Employee(); // Employee Object 1
 		LocalDate date = LocalDate.of(1998, 07, 8);
-		emp.setId(0001);
+		emp.setId(11);
 		emp.setName("Mohtasim");
 		emp.setDob(date);
 		emp.setSalary(40000);
@@ -96,40 +107,35 @@ public class Client {
 		emp.setDesignation("Manager");
 
 		// record 2
+		
 		Employee emp1 = new Employee(); // Employee Object 1
 		LocalDate date1 = LocalDate.of(1998, 8, 12);
-
-		emp.setId(0002);
+		emp1.setId(12);
 		emp1.setName("Uzair");
 		emp1.setDob(date1);
 		emp1.setSalary(20000);
 		emp1.setAddress("Nashik");
 		emp1.setDesignation("Associate");
-		
-		
-
+	
 		System.out.println("Records Inserted in Employee Table");
 
-	
-////	 update operation
-//	 emp = eservice.searchEmployeeById(1);
-//		emp.setName("Abhishek"); 
-//		emp.setSalary(19000);
-//		emp.setAddress("Mumbai");
-//		emp.setDesignation("asist");
-//		eservice.updateEmployee(emp);
-//		
-//		System.out.println("Updated");
-	
+/****************** Update first row or record  in  Employee Table******************/
+		/*
+		Employee emp = eservice.searchEmployeeById(11);
+		emp.setName("Ani");
+		emp.setDob(date21);
+		emp.setSalary(23000);
+		emp.setAddress("Mumbai");
+		emp.setDesignation("Sale Management");
+		eservice.updateEmployee(emp);
+		*/
 		
 		
-		
-		
-		/********* Item *********/
-		
+						/********* Item *********/
 		
 		
 		// Add records of Item Table.
+		
 		// record 1
 		Item item = new Item();
 		LocalDate date2 = LocalDate.of(2021, 3, 15);
@@ -156,27 +162,27 @@ public class Client {
 		item1.setCategory("Televisions");
 		
 		
-//		// record 3
-//		Item item2 = new Item();
-//		LocalDate date44 = LocalDate.of(2021, 1, 20);
-//		LocalDate date55 = LocalDate.of(2029, 3, 21);
-//		
-//		item1.setName("Oneplus");
-//		item1.setManufacturing(date4);
-//		item1.setExpiry(date5);
-//		item1.setPrice(50000);
-//		item1.setCategory("Mobiles");
+		// record 3
+		Item item2 = new Item();
+		LocalDate date44 = LocalDate.of(2021, 1, 20);
+		LocalDate date55 = LocalDate.of(2029, 3, 21);
+		
+		item1.setName("Oneplus");
+		item1.setManufacturing(date4);
+		item1.setExpiry(date5);
+		item1.setPrice(50000);
+		item1.setCategory("Mobiles");
 
 		System.out.println("Records Inserted in Item Table");
 		
 
 		
 		
-		/********* MallAdmin *********/
-		
+						/********* MallAdmin *********/
 		
 		
 		// Add records of MallAdmin Table.
+		
 		// record 1
 		MallAdmin mallad = new MallAdmin();
 		mallad.setName("Mansi");
@@ -194,12 +200,11 @@ public class Client {
 		
 		
 		
-		
-		/********* Mall *********/
+						/********* Mall *********/
 
 		
-		
 		// Add records of Mall Table.
+		
 		// record 1
 		Mall mall = new Mall();
 
@@ -218,15 +223,14 @@ public class Client {
 
 		System.out.println("Records Inserted in Mall Table");
 
-		
-		
+
 		
 		
 		/********* OrderDetails *********/
 		
 		
-		
 		// Add records of OrderDetails Table.
+		
 		// record 1
 		OrderDetails od = new OrderDetails();
 		LocalDateTime datetime = LocalDateTime.of(2022, 4, 28, 11, 31);
@@ -259,12 +263,11 @@ public class Client {
 		
 		
 		
-		
-		/********* Shop *********/
-		
+						/********* Shop *********/
 		
 		
 		// Add records for shop Table.
+		
 		// record 1
 		Shop shp = new Shop();
 
@@ -287,19 +290,18 @@ public class Client {
 
 		System.out.println("Records Inserted in Shop Table");
 
+
 		
 		
-		
-		
-		/********* ShopOwner *********/
-		
+						/********* ShopOwner *********/
 		
 		
 		// Add records for ShopOwner Table.
+		
+		// record 1
 		ShopOwner shown = new ShopOwner();
 		LocalDate date6 = LocalDate.of(1996, 12, 9);
 
-		// record 1
 		shown.setId(001100);
 		shown.setName("Aniket");
 		shown.setDob(date6);
@@ -319,11 +321,11 @@ public class Client {
 		
 		
 		
-		/********* User *********/
-		
+							/********* User *********/
 		
 		
 		// Add records for User Table.
+		
 		// record 1
 		User user = new User();
 
@@ -342,11 +344,9 @@ public class Client {
 
 		System.out.println("Records Inserted in User Table");
 		
-		
-		
 		 
 
-		/********* One To One Mapping *********/
+								/********* One To One Mapping *********/
 
 		
 		// Customer & USer
@@ -377,8 +377,10 @@ public class Client {
 		em.persist(mallad);
 		em.persist(mallad1);
 
-		/********* One To Many Mapping *********/
+								/********* One To Many Mapping *********/
 
+		
+		
 		// Customer & OrderDetails
 
 		od.setCustomer(cust);
@@ -390,6 +392,7 @@ public class Client {
 		od2.setCustomer(cust1);
 		em.persist(od2);
 
+		
 		// Shop & Employee
 
 		emp.setShop(shp);
@@ -397,6 +400,7 @@ public class Client {
 		
 		emp1.setShop(shp1);
 		em.persist(emp1);
+		
 		
 
 
@@ -415,28 +419,7 @@ public class Client {
 		em.close();
 		factory.close();
 
-		// Retrieve operation
-		/*
-		 * emp = es.searchEmployeeById(2); System.out.println("Id: "+emp.getId());
-		 * System.out.println("Name: "+emp.getName()); System.out.println(emp);
-		 */
-
-		// Update operation
-		/*
-		 * emp = es.searchEmployeeById(3); emp.setName("Harsh"); emp.setSalary(15000);
-		 * emp.setAddress("Diva"); emp.setDesignation("Store Keeper");
-		 * es.updateEmployee(emp);
-		 */
-
-		// System.out.println("Rows Updated");
-
-		// Delete operation
-		/*
-		 * emp = es.searchEmployeeById(3); System.out.println(emp);
-		 * es.deleteEmployee(emp);
-		 * 
-		 * System.out.println("Row Deleted");
-		 */
+		
 
 	}
 }

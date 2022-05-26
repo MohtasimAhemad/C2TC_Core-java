@@ -16,6 +16,7 @@ public class CustomerServiceImpl implements CustomerService
 	@Override
 	public Customer addCustomer(Customer customer) 
 	{
+	
 		custDao.beginTransaction();
 		custDao.addCustomer(customer);
 		custDao.commitTransaction();

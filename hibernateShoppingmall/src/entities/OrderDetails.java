@@ -100,10 +100,10 @@ public class OrderDetails implements Serializable
 		this.customer = customer;
 	}
 
-	@Override
-	public String toString() 
-	{
-		return "OrderDetails [id=" + id + ", dateOfPurchase=" + dateOfPurchase + ", total=" + total + ", paymentMode="
-				+ paymentMode + ", customer=" + customer + "]";
-	}
+//	@Override
+//	public String toString() 
+//	{
+//		return "OrderDetails [id=" + id + ", dateOfPurchase=" + dateOfPurchase + ", total=" + total + ", paymentMode="
+//				+ paymentMode + ", customer=" + customer + "]";
+//	}
 }
