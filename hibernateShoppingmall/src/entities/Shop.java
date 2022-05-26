@@ -4,6 +4,7 @@ package entities;
 import java.io.Serializable;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -37,10 +38,10 @@ public class Shop implements Serializable
 	@Column(name ="Lease_Status")
 	private String leaseStatus;
 
-	@OneToMany(mappedBy ="shop")
+	@OneToMany(mappedBy ="shop",orphanRemoval = true, cascade = CascadeType.PERSIST)
 	private Set<Employee> employee;
 	
-	@OneToMany(mappedBy ="shop")
+	@OneToMany(mappedBy ="shop",orphanRemoval = true, cascade = CascadeType.PERSIST)
 	private Set<Item> item;
 	
 	public Shop() {}

@@ -37,7 +37,7 @@ public class Customer implements Serializable
 	@JoinColumn(name ="User_Id")
 	private User user;
 	
-	@OneToMany(mappedBy ="customer")
+	@OneToMany(mappedBy ="customer",orphanRemoval = true, cascade = CascadeType.PERSIST)
 	private Set<OrderDetails> orderdetails;
 	
 	public Customer() {}

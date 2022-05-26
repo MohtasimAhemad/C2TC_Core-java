@@ -3,6 +3,7 @@ package entities;
 
 import java.io.Serializable;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -30,10 +31,10 @@ public class User implements Serializable
 	@Column(name ="Password")
 	private String password;
 	
-	@OneToOne(mappedBy ="user")
+	@OneToOne(mappedBy ="user",orphanRemoval = true, cascade = CascadeType.PERSIST)
 	private Customer customer;
 	
-	@OneToOne(mappedBy ="user")
+	@OneToOne(mappedBy ="user",orphanRemoval = true, cascade = CascadeType.PERSIST)
 	private MallAdmin malladmin;
 	
 	public User() {}
